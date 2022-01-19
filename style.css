@@ -131,7 +131,26 @@ ul li a:hover::after{
     margin-right: 30px;
 }
 
+.main-background3{   
+    position: relative; 
+}
 
+.main-background3::before{
+    content: "";
+    background-image: url("abstract-1781479\ -\ Copy\ \(2\).png");
+    position: absolute;
+    opacity: 0.3;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-left: 30px;
+    margin-right: 30px;
+}
 
 
 
