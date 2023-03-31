@@ -1,20 +1,9 @@
-
-* {font-family: 'Merriweather Sans', sans-serif;
-    /*
-    padding-left: 24px; 
-    padding-right: 24px; 
-    padding-top: 40px;
-    */
-    background-color: whitesmoke;
-    color: #4a4a4a;
-
-}
-
-
 body {
     margin: 0px;
     padding: 0px;
-
+    font-family: 'Merriweather Sans', sans-serif;
+    background-color: whitesmoke;
+    color: #4a4a4a;
     /*
     padding-top: 40px;
     padding-left: 24px; 
@@ -24,7 +13,7 @@ body {
 
 .top {
     padding-left: 96px; 
-    padding-right: 24px; 
+    padding-right: 96px; 
     padding-top: 72px;
     background-color: whitesmoke;
     padding-bottom: 12px;
@@ -79,8 +68,8 @@ ul li a:hover::after{
 }
 
 .main {
-    padding-left: 96px; 
-    padding-right: 96px; 
+    padding-left: 90px; 
+    padding-right: 90px; 
     padding-top: 96px;
     padding-bottom: 96px;
     
@@ -96,7 +85,7 @@ ul li a:hover::after{
     content: "";
     background-image: url("abstract-1781479.png");
     position: absolute;
-    opacity: 0.3;
+    opacity: 0.15;
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -118,7 +107,7 @@ ul li a:hover::after{
     content: "";
     background-image: url("abstract-1781479\ -\ Copy.png");
     position: absolute;
-    opacity: 0.3;
+    opacity: 0.15;
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -139,7 +128,7 @@ ul li a:hover::after{
     content: "";
     background-image: url("abstract-1781479\ -\ Copy\ \(2\).png");
     position: absolute;
-    opacity: 0.3;
+    opacity: 0.15;
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -157,27 +146,25 @@ ul li a:hover::after{
 
 header {
     padding-left: 0px;
-    padding-right: 24px; 
+    padding-right: 0px; 
     padding-top: 40px;
 
 }
 
 h1 {
-    
-    padding-right: 24px; 
     padding-top: 40px;
+    color: olive;
 }
 
 h2 {
+    color: darkolivegreen;
     padding-top: 0px;
     padding-bottom: 40px;
-    padding-right: 24px; 
     
 }
 
 h3 {
-    padding-top: 0px;
-    padding-right: 24px; 
+    padding-top: 0px; 
     font-weight: 600;
 }
 
@@ -191,15 +178,6 @@ p {
     padding-right: 24px; 
     
 }
-
-table {
-    padding: 0%;
-    width: 100%;
-}
-
-th {text-align: left;}
-
-
 
 footer {
     padding-bottom: 40px;
@@ -232,4 +210,99 @@ padding: 0%;
 .blank {
     padding-left: 90px;
     padding-right: 90px;
+}
+
+.projectlink:link {
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+.projectlink:visited {
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+.projectlink:hover {
+    color: tomato;
+}
+
+.projectlink::after{
+    content: "";
+    position: absolute;
+    left:0%;
+    bottom: 0%;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 300ms;
+}
+
+.projectlink:hover::after{
+    color: tomato;
+    transition: 300ms;
+    transform: scaleX(1);
+    
+}
+
+
+@media all and (max-width: 580px) {
+    h1 {
+        padding-top: 10px;
+    }
+
+    /* .navbar {
+        display: flex;
+        justify-content: center;
+    } */
+
+    h2 {
+        padding-bottom: 0px;
+    }
+
+    .navbar ul li{
+        display: inline-block;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+    .top {
+        padding-left: 35px; 
+        padding-right: 35px; 
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .main {
+        padding-left: 35px; 
+        padding-right: 35px; 
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .main-background::before{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .main-background2::before{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .main-background3::before{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+
+@media all and (max-width: 380px) {
+
+    .navbar ul li{
+        display: inline-block;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
 }
