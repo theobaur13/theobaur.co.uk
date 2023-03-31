@@ -83,7 +83,7 @@ ul li a:hover::after{
 
 .main-background::before{
     content: "";
-    background-image: url("abstract-1781479.png");
+    background-image: url("background.png");
     position: absolute;
     opacity: 0.15;
     top: 0px;
@@ -105,7 +105,7 @@ ul li a:hover::after{
 
 .main-background2::before{
     content: "";
-    background-image: url("abstract-1781479\ -\ Copy.png");
+    background-image: url("background2.png");
     position: absolute;
     opacity: 0.15;
     top: 0px;
@@ -126,7 +126,7 @@ ul li a:hover::after{
 
 .main-background3::before{
     content: "";
-    background-image: url("abstract-1781479\ -\ Copy\ \(2\).png");
+    background-image: url("background3.png");
     position: absolute;
     opacity: 0.15;
     top: 0px;
