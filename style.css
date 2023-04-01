@@ -81,7 +81,7 @@ ul li a:hover::after{
     position: relative; 
 }
 
-.main-background::before{
+.main-background:before{
     content: "";
     background-image: url("background.png");
     position: absolute;
@@ -103,7 +103,7 @@ ul li a:hover::after{
     position: relative; 
 }
 
-.main-background2::before{
+.main-background2:before{
     content: "";
     background-image: url("background2.png");
     position: absolute;
@@ -124,7 +124,7 @@ ul li a:hover::after{
     position: relative; 
 }
 
-.main-background3::before{
+.main-background3:before{
     content: "";
     background-image: url("background3.png");
     position: absolute;
@@ -281,17 +281,17 @@ padding: 0%;
         padding-bottom: 40px;
     }
 
-    .main-background::before{
+    .main-background:before{
         margin-left: 10px;
         margin-right: 10px;
     }
 
-    .main-background2::before{
+    .main-background2:before{
         margin-left: 10px;
         margin-right: 10px;
     }
 
-    .main-background3::before{
+    .main-background3:before{
         margin-left: 10px;
         margin-right: 10px;
     }
