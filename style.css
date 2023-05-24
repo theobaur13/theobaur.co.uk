@@ -511,6 +511,10 @@ padding: 0%;
         display: none;
     }
 
+    .project-link-wrapper img {
+        display: block;
+    }
+
     .work-experience {
         padding-bottom: 20px;
     }
