@@ -277,11 +277,16 @@ padding: 0%;
     padding-right: 90px;
 }
 
+.project-links {
+    display: flex;
+}
+
 .project-link-wrapper {
     background-color: #3C2A21;
     width: 100px;
     height: 22px;
     padding: 5px 5px;  
+    margin-right: 10px;
     border-radius: 5px;
     display: flex;
 }
