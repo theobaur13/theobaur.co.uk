@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Theodor Hui Ren Baur</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <link rel="icon" href="img/theo-picture.ico" type="image/x-icon" sizes="16x16">
-    <!-- <link rel="icon" href="https://theobaur.co.uk/theo-picture.png" type="image/jpg"> -->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css"/>
+    <link rel="icon" href="static/img/theo-picture.ico" type="image/x-icon" sizes="16x16">
     <style>@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');</style>
 </head>
 <body>
@@ -23,7 +22,7 @@
         <div class="top">
             <a name="about">
             <header>
-                <img src="img/theo-picture.jpg" alt="Profile Picture" class="header-img">
+                <img src="static/img/theo-picture.jpg" alt="Profile Picture" class="header-img">
                 <div class="header-text">
                     <h1 id=">name">
                         <!-- Theodor Hui Ren Baur -->
@@ -77,12 +76,12 @@
                         <div class="project-link-wrapper">
                             <a href="https://github.com/theobaur13/tool-sharing-website" class="projectlink">Github</a>
                             <a href="https://github.com/theobaur13/tool-sharing-website">
-                                <img src="img/github-mark-white.png" alt="Github Logo" width="16" height="16" />
+                                <img src="static/img/github-mark-white.png" alt="Github Logo" width="16" height="16" />
                             </a>
                         </div>
                     </div>
                 </div>
-                <img class="scroll" src="img/tool-sharing-website.png" alt="Tool Sharing Website" data-rate="2">
+                <img class="scroll" src="static/img/tool-sharing-website.png" alt="Tool Sharing Website" data-rate="2">
             </div>
 
             <div class="project" data-rate="-2">
@@ -108,13 +107,13 @@
                         <div class="project-link-wrapper">
                             <a href="https://github.com/GrLdev/Rate-My-Student-Home" class="projectlink">Github</a>
                             <a href="https://github.com/GrLdev/Rate-My-Student-Home">
-                                <img src="img/github-mark-white.png" alt="Github Logo" width="16" height="16" />
+                                <img src="static/img/github-mark-white.png" alt="Github Logo" width="16" height="16" />
                             </a>
                         </div>
                         <div class="project-link-wrapper">
                             <a href="https://ratemystudenthome.com/" class="projectlink">Live Site</a>
                             <a href="https://ratemystudenthome.com/">
-                                <img src="img/link.png" alt="Link" width="16" height="16" />
+                                <img src="static/img/link.png" alt="Link" width="16" height="16" />
                             </a>
                         </div>
                     </div>
@@ -149,68 +148,29 @@
         <div class="center-footer">
             <p>
                 <a class="icon" href="https://github.com/theobaur13">
-                    <img src="img/github-mark-white.png" alt="Github Logo" width="16" height="16" />
+                    <img src="static/img/github-mark-white.png" alt="Github Logo" width="16" height="16" />
                 </a>
                 <a class="icon" href="https://git.cardiff.ac.uk/c21050251">
-                    <img src="img/gitlab-logo-700.png" alt="GitLab Logo" width="16" height="16" />
+                    <img src="static/img/gitlab-logo-700.png" alt="GitLab Logo" width="16" height="16" />
                 </a>
                 <a class="icon" href="https://www.linkedin.com/in/theobaur/">
-                    <img src="img/LI-In-Bug.png" alt="LinkedIn Logo" width="16" height="16" />
+                    <img src="static/img/LI-In-Bug.png" alt="LinkedIn Logo" width="16" height="16" />
                 </a>
                 <a class="icon" href="https://www.facebook.com/theo.baur.908/">
-                    <img src="img/f_logo_RGB-White_58.png" alt="Facebook Logo" width="16" height="16" />
+                    <img src="static/img/f_logo_RGB-White_58.png" alt="Facebook Logo" width="16" height="16" />
                 </a>
                 <a class="icon" href="https://www.instagram.com/theo.baur/">
-                    <img src="img/Instagram_Glyph_White.png" alt="Instagram Logo" width="16" height="16"/>
+                    <img src="static/img/Instagram_Glyph_White.png" alt="Instagram Logo" width="16" height="16"/>
                 </a>
                 <a class="icon" href="https://twitter.com/baur_theo">
-                    <img src="img/2021 Twitter logo - white.png" alt="Github Logo" width="16" height="16" />
+                    <img src="static/img/2021 Twitter logo - white.png" alt="Github Logo" width="16" height="16" />
                 </a> 
             </p>
         </div>
     </footer>
 
-    <script>
-        window.addEventListener('scroll', function(element) {
-            const target = document.querySelectorAll('.scroll');
-            target.forEach(function(element) {
-                var pos = window.pageYOffset-590;
-                <!-- console.log(pos); -->
-                var rate = pos * 0.07;
-                element.style.transform = 'translate3d(0px, '+rate+'px, 0px)';
-                element.style.transform = 'scale(rate)';
-            });
-
-            const target2 = document.querySelectorAll('.project');
-            target2.forEach(function(element) {
-                var pos = window.pageYOffset-560;
-                var rate = pos * -0.07;
-                element.style.transform = 'translate3d(0px, '+rate+'px, 0px)';
-            });
-
-            const target3 = document.querySelectorAll('.work-experience');
-            target3.forEach(function(element) {
-                var pos = window.pageYOffset-650;
-                var rate = pos * -0.07;
-                element.style.transform = 'translate3d(0px, '+rate+'px, 0px)';
-            });
-        });
-    </script>
-
-    <script>
-        var i = 0;
-
-        function typeWriter() {
-            var txt = 'Theodor Hui Ren Baur';
-            var speed = 25;
-            if (i < txt.length) {
-                document.getElementById(">name").innerHTML += txt.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-            }
-        }
-        typeWriter();
-    </script>
+    <script src="static/js/scroll.js"></script>
+    <script src="static/js/typewriter.js"></script>
 
 </body>
 </html>
