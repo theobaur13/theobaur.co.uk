@@ -1,10 +1,5 @@
 :root {
-  /* --color-calendar-graph-day-bg: #E5E5CB; */
     --color-calendar-graph-day-bg: #3C2A21;
-  /* --color-calendar-graph-day-L1-bg: #39dd34;
-  --color-calendar-graph-day-L2-bg: #45a045;
-  --color-calendar-graph-day-L3-bg: #047526;
-  --color-calendar-graph-day-L4-bg: #0a4208; */
     --color-calendar-graph-day-L1-bg: #741200;
     --color-calendar-graph-day-L2-bg: #a21900;
     --color-calendar-graph-day-L3-bg: #d12000;
@@ -36,15 +31,12 @@ rect.ContributionCalendar-day[data-level='4'] {
 }
 
 .calendar {
-    /* font-family: Helvetica, arial; */
     font-family: 'Merriweather Sans', sans-serif;
-    /* border: 1px solid #DDDDDD; */
     border-radius: 3px;
     min-height: 243px;
     text-align: center;
     margin: 0 auto;
-    /* background-color: #3C2A21; */
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .calendar-graph text.wday,
@@ -201,6 +193,8 @@ text.ContributionCalendar-label {
     fill: #D5CEA3;
     font-size: 11px;
 }
+
+
 
 @media all and (max-width: 800px){
     .calendar {
