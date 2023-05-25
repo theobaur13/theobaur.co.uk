@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Theodor Hui Ren Baur</title>
     <link rel="stylesheet" type="text/css" href="static/css/style.css"/>
+    <link rel="stylesheet" href="static/css/github-calendar-responsive.css"/>
     <link rel="icon" href="static/img/theo-picture.ico" type="image/x-icon" sizes="16x16">
     <style>@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');</style>
 </head>
@@ -40,6 +41,7 @@
                 
             </header>
             </a>
+            <div class="calendar"></div>
         </div>
     </div>
 
@@ -171,6 +173,10 @@
 
     <script src="static/js/scroll.js"></script>
     <script src="static/js/typewriter.js"></script>
+    <script src="static/js/github-calendar.min.js"></script>
+    <script>
+        GitHubCalendar(".calendar", "theobaur13", { responsive: true });
+    </script>
 
 </body>
 </html>
