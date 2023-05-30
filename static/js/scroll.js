@@ -1,7 +1,7 @@
 window.addEventListener('scroll', function(element) {
     const target = document.querySelectorAll('.scroll');
     target.forEach(function(element) {
-        var pos = window.pageYOffset-590;
+        var pos = window.pageYOffset-872;
         var rate = pos * 0.07;
         element.style.transform = 'translate3d(0px, '+rate+'px, 0px)';
         element.style.transform = 'scale(rate)';
@@ -9,7 +9,7 @@ window.addEventListener('scroll', function(element) {
 
     const target2 = document.querySelectorAll('.project');
     target2.forEach(function(element) {
-        var pos = window.pageYOffset-560;
+        var pos = window.pageYOffset-872;
         var rate = pos * -0.07;
         element.style.transform = 'translate3d(0px, '+rate+'px, 0px)';
     });
@@ -20,4 +20,6 @@ window.addEventListener('scroll', function(element) {
         var rate = pos * -0.07;
         element.style.transform = 'translate3d(0px, '+rate+'px, 0px)';
     });
+
+    console.log(window.pageYOffset);
 });
