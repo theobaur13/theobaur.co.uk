@@ -110,8 +110,7 @@ header {
     overflow-y: hidden;
     white-space: nowrap;
 
-    scrollbar-width: thin;
-    scrollbar-color: #555555 #dddddd;
+    scrollbar-width: none;
 }
 /*  */
 .skills::-webkit-scrollbar {
