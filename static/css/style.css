@@ -25,6 +25,7 @@ p {
     display: flex;
     justify-content: center;
     padding-top: 72px;
+    padding-bottom: 40px;
 }
 
 .navbar ul{
@@ -72,8 +73,7 @@ ul li a:hover::after{
 header {
     padding-left: 0px;
     padding-right: 0px; 
-    padding-top: 40px;
-    padding-bottom: 40px;    
+    /* padding-bottom: 40px;     */
     display: inline-block;
 }
 
@@ -94,6 +94,80 @@ header {
     border-radius: 3px;
     opacity: 0.9;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.skill-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.skills {
+    height: 100px;
+    text-align: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+    scrollbar-width: thin;
+    scrollbar-color: #555555 #dddddd;
+}
+/*  */
+.skills::-webkit-scrollbar {
+    display: none;
+}
+
+.skills::-webkit-scrollbar-track {
+    background-color: #dddddd;
+}
+
+.skills::-webkit-scrollbar-thumb {
+    background-color: #555555;
+}
+
+.skills::-webkit-scrollbar-thumb:hover {
+    background-color: #333333;
+}
+/*  */
+.btn-scroll {
+    border: none;
+    text-decoration: none;
+}
+
+.btn-scroll:hover {
+    transform: scale(1.05);
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.btn-scroll:hover svg{
+    stroke: tomato;
+    transform: scale(1.05);
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.skillbox {
+    width: 60px;
+    height: 60px;
+    background-color: #3C2A21;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.skillbox img {
+    width: 40px;
+    height: 40px;
+    filter:  opacity(90%);
+}
+
+.skillbox p {
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .socials {
@@ -482,10 +556,12 @@ padding: 0%;
 }
 
 @media all and (max-width: 800px) {
+    .navbar {
+        padding-bottom: 20px;
+    }
     header {
         display: grid;
         justify-items: center;
-        padding-top: 20px;
         padding-bottom: 20px;
     }
 
