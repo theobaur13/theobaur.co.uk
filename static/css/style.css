@@ -119,15 +119,15 @@ header {
 }
 
 .skills::-webkit-scrollbar-track {
-    background-color: #dddddd;
+    display: none;
 }
 
 .skills::-webkit-scrollbar-thumb {
-    background-color: #555555;
+    display: none;
 }
 
 .skills::-webkit-scrollbar-thumb:hover {
-    background-color: #333333;
+    display: none;
 }
 /*  */
 .btn-scroll {
