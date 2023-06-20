@@ -31,6 +31,6 @@ function scroll_handler() {
         }
 }
 
-var debouncedScroll = debounce(scroll_handler, 8); 
+var debouncedScroll = debounce(scroll_handler, 4); 
 
 window.addEventListener('scroll', debouncedScroll); 
