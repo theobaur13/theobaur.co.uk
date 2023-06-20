@@ -1,42 +1,24 @@
 window.addEventListener('scroll', function(element) {
-    const target = document.querySelectorAll('.scroll');
+    var elements = document.getElementsByClassName("scroll");
     var screenWidth = window.innerWidth || document.documentElement.clientWidth;
 
-    if (screenWidth < 2160) {
-        target.forEach(function(element) {
-            var pos = window.pageYOffset-872;
-            var rate = pos * 0.07;
-            element.style.transform = 'translate3d(0px, '+rate+'px, 0px)';
-            element.style.transform = 'scale(rate)';
-        });
+    if (screenWidth < 2160){
+        for (var i = 0; i < elements.length; i++) {
+            var element = elements[i];
+            var rect = element.getBoundingClientRect();
+            var viewport_height = window.innerHeight || document.documentElement.clientHeight;
+            const element_pos = rect.top + window.pageYOffset - (viewport_height / 4);
 
-        const target2 = document.querySelectorAll('.project');
-        target2.forEach(function(element) {
-            var pos = window.pageYOffset-872;
-            var rate = pos * -0.07;
-            element.style.transform = 'translate3d(0px, '+rate+'px, 0px)';
-        });
+            var data_rate = element.getAttribute("data-rate");
+            var scale_rate = element.getAttribute("scale-rate");
+            var user_pos = window.pageYOffset;
 
-        const target3 = document.querySelectorAll('.work-experience-section');
-        target3.forEach(function(element) {
-            var pos = window.pageYOffset-2000;
-            var rate = pos * -0.07;
-            element.style.transform = 'translate3d(0px, '+rate+'px, 0px)';
-        }); 
-    }
-    else {
-        target.forEach(function(element) {
-            element.style.transform = 'translate3d(0px, 0px, 0px)';
-        });
+            var distance = user_pos - element_pos;
+            var distance_abs = Math.abs(distance);
+            var transform = distance * data_rate * 0.07;
+            var scale = 1 + (-distance_abs * scale_rate) * 0.0001; 
 
-        const target2 = document.querySelectorAll('.project');
-        target2.forEach(function(element) {
-            element.style.transform = 'translate3d(0px, 0px, 0px)';
-        });
-
-        const target3 = document.querySelectorAll('.work-experience-section');
-        target3.forEach(function(element) {
-            element.style.transform = 'translate3d(0px, 0px, 0px)';
-        });
+            element.style.transform = 'translate3d(0px, ' + transform + 'px, 0px) scale(' + scale + ')';
+        }
     }
 });
