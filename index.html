@@ -47,64 +47,68 @@
                     </div>      
                 </header>
                 
-                <h5 style="text-align: center;">MY SKILLS</h5>
+                <div class="skills-section">
+                    <h5 style="text-align: center;">MY SKILLS</h5>
 
-                <div class="skill-bar">
-                    <div class="btn-scroll" width="24" height="24">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D5CEA3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left" id="btn-scroll-left">
-                            <polyline points="15 18 9 12 15 6"/>
-                        </svg>
-                    </div>
+                    <div class="skill-bar">
+                        <div class="btn-scroll" width="24" height="24">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D5CEA3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left" id="btn-scroll-left">
+                                <polyline points="15 18 9 12 15 6"/>
+                            </svg>
+                        </div>
 
-                    <div class="skills">
-                        <div class="skillbox">
-                            <img src="static/img/python-logo-only.png" alt="Python" width="40" height="40"/>
-                            <p>Python</p>
+                        <div class="skills">
+                            <div class="skillbox">
+                                <img src="static/img/python-logo-only.png" alt="Python" width="40" height="40"/>
+                                <p>Python</p>
+                            </div>
+                            <div class="skillbox">
+                                <img src="static/img/java.png" alt="Java" width="40" height="40"/>
+                                <p>Java</p>
+                            </div>
+                            <div class="skillbox">
+                                <img src="static/img/javascript.png" alt="JavaScript" width="40" height="40"/>
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="skillbox">
+                                <img src="static/img/git.png" alt="Git" width="40" height="40"/>
+                                <p>Git</p>
+                            </div>
+                            <div class="skillbox">
+                                <img src="static/img/matlab.png" alt="MATLAB" width="40" height="40"/>
+                                <p>MATLAB</p>
+                            </div>
+                            <div class="skillbox">
+                                <img src="static/svg/sql.svg" alt="SQL" width="40" height="40"/>
+                                <p>SQL</p>
+                            </div>
+                            <div class="skillbox">
+                                <img src="static/img/html.png" alt="HTML" width="40" height="40"/>
+                                <p>HTML</p>
+                            </div>
+                            <div class="skillbox">
+                                <img src="static/img/css.png" alt="CSS" width="40" height="40"/>
+                                <p>CSS</p>
+                            </div>
+                            <div class="skillbox">
+                                <img src="static/img/flask.png" alt="Flask" width="40" height="40" style="filter:invert(1)"/>
+                                <p>Flask</p>
+                            </div>
                         </div>
-                        <div class="skillbox">
-                            <img src="static/img/java.png" alt="Java" width="40" height="40"/>
-                            <p>Java</p>
-                        </div>
-                        <div class="skillbox">
-                            <img src="static/img/javascript.png" alt="JavaScript" width="40" height="40"/>
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="skillbox">
-                            <img src="static/img/git.png" alt="Git" width="40" height="40"/>
-                            <p>Git</p>
-                        </div>
-                        <div class="skillbox">
-                            <img src="static/img/matlab.png" alt="MATLAB" width="40" height="40"/>
-                            <p>MATLAB</p>
-                        </div>
-                        <div class="skillbox">
-                            <img src="static/svg/sql.svg" alt="SQL" width="40" height="40"/>
-                            <p>SQL</p>
-                        </div>
-                        <div class="skillbox">
-                            <img src="static/img/html.png" alt="HTML" width="40" height="40"/>
-                            <p>HTML</p>
-                        </div>
-                        <div class="skillbox">
-                            <img src="static/img/css.png" alt="CSS" width="40" height="40"/>
-                            <p>CSS</p>
-                        </div>
-                        <div class="skillbox">
-                            <img src="static/img/flask.png" alt="Flask" width="40" height="40" style="filter:invert(1)"/>
-                            <p>Flask</p>
-                        </div>
-                    </div>
 
-                    <div class="btn-scroll" width="24" height="24">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D5CEA3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right" id="btn-scroll-right">
-                            <polyline points="9 18 15 12 9 6"/>
-                        </svg>
+                        <div class="btn-scroll" width="24" height="24">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D5CEA3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right" id="btn-scroll-right">
+                                <polyline points="9 18 15 12 9 6"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
 
+                <div class="contributions-section">
                 <h5 style="text-align: center;">MY CONTRIBUTIONS</h5>
 
                 <div class="calendar"></div>
+                </div>
         </div>
     </div>
 
@@ -282,6 +286,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>
         GitHubCalendar(".calendar", "theobaur13", { responsive: true });
+        document.querySelector(".contributions-section").style.display = "none";
     </script>
 
 </body>
