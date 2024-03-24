@@ -34,6 +34,7 @@
                 <li><a href="#projects">projects</a></li>
                 <li><a href="#work-experience">work experience</a></li>
             </ul>
+            <div style="cursor: pointer;" id="dark-mode-toggle">🌒</div>
         </div>
 
         <div class="top" id="about">
@@ -63,7 +64,7 @@
 
                     <div class="skill-bar">
                         <div class="btn-scroll" width="24" height="24">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D5CEA3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left" id="btn-scroll-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left invert" id="btn-scroll-left">
                                 <polyline points="15 18 9 12 15 6"/>
                             </svg>
                         </div>
@@ -90,7 +91,7 @@
                                 <p>MATLAB</p>
                             </div>
                             <div class="skillbox">
-                                <img src="static/svg/sql.svg" alt="SQL" width="40" height="40"/>
+                                <img src="static/img/sql.png" alt="SQL" width="40" height="40" class="invert"/>
                                 <p>SQL</p>
                             </div>
                             <div class="skillbox">
@@ -102,38 +103,44 @@
                                 <p>CSS</p>
                             </div>
                             <div class="skillbox">
-                                <img src="static/img/flask.png" alt="Flask" width="40" height="40" style="filter:invert(1)"/>
+                                <img src="static/img/flask.png" alt="Flask" width="40" height="40" class="invert"/>
                                 <p>Flask</p>
                             </div>
                         </div>
 
                         <div class="btn-scroll" width="24" height="24">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D5CEA3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right" id="btn-scroll-right">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right invert" id="btn-scroll-right">
                                 <polyline points="9 18 15 12 9 6"/>
                             </svg>
                         </div>
                     </div>
                 </div>
 
+                <hr>
+
                 <div class="contributions-section">
                 <h5 style="text-align: center;">MY CONTRIBUTIONS</h5>
 
                 <div class="calendar"></div>
                 </div>
+
+                <hr>
+
+                <div class="socials">
+                    <div class="socials-link-wrapper" style="background-color: #FFFFFF; background: radial-gradient(at 0% 10%, #FFFFFF 0%, #c8d8c9 80%, #a6ddaf 100%);">
+                        <a href="https://github.com/theobaur13" class="socials-link" style="color: #272727; font-weight:bold;">GitHub</a>
+                    </div>
+                    <div class="socials-link-wrapper" style="background: radial-gradient(at 0% 10%, #FFFFFF 0%, #FFD1BF 80%, #CEB3EF 100%);">
+                        <a href="https://git.cardiff.ac.uk/c21050251" class="socials-link" style="color: #E24329; font-weight:bold; font-family:'GitLab Sans';">GitLab</a>
+                    </div>
+                    <div class="socials-link-wrapper" style="background-color: #FFFFFF; background: radial-gradient(at 0% 10%, #FFFFFF 0%, #cccdcf 80%, #b9bbbd 100%);">
+                        <a href="https://www.linkedin.com/in/theobaur/" class="socials-link" style="color: #0077b5;font-weight:bold; ">LinkedIn</a>
+                    </div>
+                </div>
         </div>
     </div>
 
-    <div class="socials">
-        <div class="socials-link-wrapper" style="background-color: #FFFFFF; background: radial-gradient(at 0% 10%, #FFFFFF 0%, #c8d8c9 80%, #a6ddaf 100%);">
-            <a href="https://github.com/theobaur13" class="socials-link" style="color: #272727; font-weight:bold;">GitHub</a>
-        </div>
-        <div class="socials-link-wrapper" style="background: radial-gradient(at 0% 10%, #FFFFFF 0%, #FFD1BF 80%, #CEB3EF 100%);">
-            <a href="https://git.cardiff.ac.uk/c21050251" class="socials-link" style="color: #E24329; font-weight:bold; font-family:'GitLab Sans';">GitLab</a>
-        </div>
-        <div class="socials-link-wrapper" style="background-color: #FFFFFF; background: radial-gradient(at 0% 10%, #FFFFFF 0%, #cccdcf 80%, #b9bbbd 100%);">
-            <a href="https://www.linkedin.com/in/theobaur/" class="socials-link" style="color: #0077b5;font-weight:bold; ">LinkedIn</a>
-        </div>
-    </div>
+    
 
     <div class="projects" id="projects">
         <h2>
@@ -154,15 +161,15 @@
                 <h5>Python / HTML / CSS / JavaScript / SQLite</h5>
                 <div class="project-links">
                     <div class="project-link-wrapper">
-                        <a href="https://github.com/theobaur13/tool-sharing-website" class="projectlink">Github</a>
+                        <a href="https://github.com/theobaur13/tool-sharing-website" class="projectlink"><b>Github</b></a>
                         <a href="https://github.com/theobaur13/tool-sharing-website">
-                            <img src="static/img/github-mark-white.png" alt="Github Logo" width="16" height="16" />
+                            <img src="static/img/github-mark-white.png" alt="Github Logo" width="16" height="16" class="invert"/>
                         </a>
                     </div>
                     <div class="project-link-wrapper">
-                        <a href="https://www.youtube.com/watch?v=IL8xZn2OB3A" class="projectlink">Demo</a>
+                        <a href="https://www.youtube.com/watch?v=IL8xZn2OB3A" class="projectlink"><b>Demo</b></a>
                         <a href="https://www.youtube.com/watch?v=IL8xZn2OB3A">
-                            <img src="static/img/link.png" alt="Link" width="16" height="16" />
+                            <img src="static/img/link.png" alt="Link" width="16" height="16" class="invert"/>
                         </a>
                     </div>
                 </div>
@@ -183,15 +190,15 @@
                 <h5>Python / HTML / CSS / JavaScript</h5>
                 <div class="project-links">
                     <div class="project-link-wrapper">
-                        <a href="https://github.com/theobaur13/playlist-name-generator" class="projectlink">Github</a>
+                        <a href="https://github.com/theobaur13/playlist-name-generator" class="projectlink"><b>Github</b></a>
                         <a href="https://github.com/theobaur13/playlist-name-generator">
-                            <img src="static/img/github-mark-white.png" alt="Github Logo" width="16" height="16" />
+                            <img src="static/img/github-mark-white.png" alt="Github Logo" width="16" height="16" class="invert"/>
                         </a>
                     </div>
                     <div class="project-link-wrapper">
-                        <a href="https://www.aiplaylistnamegen.com/" class="projectlink">Live Site</a>
+                        <a href="https://www.aiplaylistnamegen.com/" class="projectlink"><b>Live Site</b></a>
                         <a href="https://www.aiplaylistnamegen.com/">
-                            <img src="static/img/link.png" alt="Link" width="16" height="16" />
+                            <img src="static/img/link.png" alt="Link" width="16" height="16" class="invert"/>
                         </a>
                     </div>
                 </div>
@@ -210,15 +217,15 @@
                 <h5>HTML / CSS / JavaScript</h5>
                 <div class="project-links">
                     <div class="project-link-wrapper">
-                        <a href="https://github.com/theobaur13/Personal-Website" class="projectlink">Github</a>
+                        <a href="https://github.com/theobaur13/Personal-Website" class="projectlink"><b>Github</b></a>
                         <a href="https://github.com/theobaur13/Personal-Website">
-                            <img src="static/img/github-mark-white.png" alt="Github Logo" width="16" height="16" />
+                            <img src="static/img/github-mark-white.png" alt="Github Logo" width="16" height="16" class="invert"/>
                         </a>
                     </div>
                     <div class="project-link-wrapper">
-                        <a href="https://www.theobaur.co.uk/" class="projectlink">Live Site</a>
+                        <a href="https://www.theobaur.co.uk/" class="projectlink"><b>Live Site</b></a>
                         <a href="https://www.theobaur.co.uk/">
-                            <img src="static/img/link.png" alt="Link" width="16" height="16" />
+                            <img src="static/img/link.png" alt="Link" width="16" height="16" class="invert"/>
                         </a>
                     </div>
                 </div>
@@ -235,15 +242,15 @@
                 <h5>Python / HTML / CSS / JavaScript / SQLite</h5>
                 <div class="project-links">
                     <div class="project-link-wrapper">
-                        <a href="https://github.com/GrLdev/Rate-My-Student-Home" class="projectlink">Github</a>
+                        <a href="https://github.com/GrLdev/Rate-My-Student-Home" class="projectlink"><b>Github</b></a>
                         <a href="https://github.com/GrLdev/Rate-My-Student-Home">
-                            <img src="static/img/github-mark-white.png" alt="Github Logo" width="16" height="16" />
+                            <img src="static/img/github-mark-white.png" alt="Github Logo" width="16" height="16" class="invert"/>
                         </a>
                     </div>
                     <div class="project-link-wrapper">
-                        <a href="https://ratemystudenthome.com/" class="projectlink">Live Site</a>
+                        <a href="https://ratemystudenthome.com/" class="projectlink"><b>Live Site</b></a>
                         <a href="https://ratemystudenthome.com/">
-                            <img src="static/img/link.png" alt="Link" width="16" height="16" />
+                            <img src="static/img/link.png" alt="Link" width="16" height="16" class="invert"/>
                         </a>
                     </div>
                 </div>
@@ -281,28 +288,62 @@
         <div class="center-footer">
             <p>
                 <a class="icon" href="https://github.com/theobaur13">
-                    <img src="static/img/github-mark-white.png" alt="Github Logo" width="16" height="16" />
+                    <img src="static/img/github-mark.png" alt="Github Logo" width="16" height="16" class="invert"/>
                 </a>
                 <a class="icon" href="https://git.cardiff.ac.uk/c21050251">
-                    <img src="static/img/gitlab-logo-700.png" alt="GitLab Logo" width="16" height="16" />
+                    <img src="static/img/gitlab-logo-700.png" alt="GitLab Logo" width="16" height="16" class="invert"/>
                 </a>
                 <a class="icon" href="https://www.linkedin.com/in/theobaur/">
-                    <img src="static/img/LI-In-Bug.png" alt="LinkedIn Logo" width="16" height="16" />
+                    <img src="static/img/LI-In-Bug.png" alt="LinkedIn Logo" width="16" height="16" class="invert"/>
                 </a>
                 <a class="icon" href="https://www.facebook.com/theo.baur.908/">
-                    <img src="static/img/f_logo_RGB-White_58.png" alt="Facebook Logo" width="16" height="16" />
+                    <img src="static/img/f_logo_RGB-White_58.png" alt="Facebook Logo" width="16" height="16" class="invert"/>
                 </a>
                 <a class="icon" href="https://www.instagram.com/theo.baur/">
-                    <img src="static/img/Instagram_Glyph_White.png" alt="Instagram Logo" width="16" height="16"/>
+                    <img src="static/img/Instagram_Glyph_White.png" alt="Instagram Logo" width="16" height="16" class="invert"/>
                 </a>
                 <a class="icon" href="https://twitter.com/baur_theo">
-                    <img src="static/img/2021 Twitter logo - white.png" alt="Github Logo" width="16" height="16" />
+                    <img src="static/img/2021 Twitter logo - white.png" alt="Github Logo" width="16" height="16" class="invert"/>
                 </a> 
             </p>
         </div>
     </footer>
 
-    <!-- <script src="static/js/scroll.js"></script> -->
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+          // Target the specific element with the long class list
+          const element = document.querySelector('.js-calendar-graph.mx-md-2.mx-3.d-flex.flex-column.flex-items-end.flex-xl-items-center.overflow-hidden.pt-1.is-graph-loading.graph-canvas.ContributionCalendar.height-full.text-center');
+        
+          // Check if the element exists to avoid errors
+          if (element) {
+            // Set the overflow style to 'none'
+            element.style.overflowX = 'hidden';
+          }
+        });
+    </script>
+    <script>
+        var toggle = document.getElementById("dark-mode-toggle");
+        toggle.onclick = function() {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                toggle.innerHTML = "🌞";
+
+                // invert all images with class="icon"
+                var icons = document.getElementsByClassName("invert");
+                for (var i = 0; i < icons.length; i++) {
+                    icons[i].style.filter = "invert(1)";
+                }
+            } else {
+                toggle.innerHTML = "🌒";
+
+                // revert all images with class="icon"
+                var icons = document.getElementsByClassName("invert");
+                for (var i = 0; i < icons.length; i++) {
+                    icons[i].style.filter = "invert(0)";
+                }
+            }
+        }
+    </script>
     <script src="static/js/typewriter.js"></script>
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
     <script src="static/js/scrollbar.js"></script>
