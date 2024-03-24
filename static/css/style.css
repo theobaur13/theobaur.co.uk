@@ -1,11 +1,28 @@
+:root{
+    --primary-color: #000000;
+    --primary-gradient: #0f0f0f;
+    --secondary-color: #ffffff;
+    --secondary-gradient: #f5f5f5;
+    --skillbox-color: var(--secondary-color);
+    --card-background: var(--secondary-color);
+    --shadow: var(--primary-color);
+}
+.dark-theme {
+    --primary-color: #E5E5CB;
+    --primary-gradient: #D5CEA3;
+    --secondary-color: #1A120B;
+    --secondary-gradient: #3C2A21;
+    --skillbox-color: var(--secondary-gradient);
+    --card-background: var(--secondary-gradient);
+    --shadow: var(--secondary-color);
+}
+
 body {
     margin: 0px;
     padding: 0px;
     font-family: 'Merriweather Sans', sans-serif;
-    background-color: #1A120B;
-    color: #E5E5CB;
-    /* max-width: 2560px;
-    margin: 0 auto; */
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 p {
@@ -13,15 +30,15 @@ p {
 }
 
 .gradient {
-    background: linear-gradient(170deg, #1A120B 0%, #3C2A21 0%, #1A120B 80%);
+    background: linear-gradient(170deg, var(--secondary-color) 0%, var(--secondary-color) 0%,  var(--secondary-gradient) 80%);
 }
 
 .top {
     padding-left: 25.8%; 
     padding-right: 25.8%; 
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     text-align: right;
-    color: #D5CEA3;
+    color: var(--primary-color);
 }
 
 .navbar {
@@ -43,7 +60,7 @@ p {
 }
 
 ul li a{
-    color: #D5CEA3;
+    color: var(--primary-color);
     text-decoration: none;
     position: relative;
 }
@@ -76,7 +93,6 @@ ul li a:hover::after{
 header {
     padding-left: 0px;
     padding-right: 0px; 
-    /* padding-bottom: 40px;     */
     display: inline-block;
 }
 
@@ -112,7 +128,6 @@ header {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-
     scrollbar-width: none;
 }
 /*  */
@@ -153,11 +168,18 @@ header {
 .skillbox {
     width: 60px;
     height: 60px;
-    background-color: #3C2A21;
+    background-color: var(--skillbox-color);
     display: inline-block;
     margin: 10px;
-    border-radius: 3px;
     padding: 10px;
+
+    border-radius: 3px;
+    box-shadow: 2px 2px 0px var(--shadow);
+    border: 2px solid var(--primary-color)
+}
+
+.dark-theme .skillbox {
+    border: 2px solid var(--secondary-color);
 }
 
 .skillbox img {
@@ -173,7 +195,6 @@ header {
 }
 
 .socials {
-    background-color: #3C2A21;
     display: flex;
     justify-content: center;
     padding-top: 30px;
@@ -188,7 +209,7 @@ header {
     padding-right: 20px;
     margin-left: 30px;
     margin-right: 30px;
-    background-color: #1A120B;
+    background-color: var(--primary-color);
     border-radius: 3px;
     display: flex;
 }
@@ -200,7 +221,7 @@ header {
 
 .socials-link-wrapper a {
     width: 200px;
-    color: #E5E5CB;
+    color: var(--secondary-color);
     text-decoration: none;
     flex: 1;
     text-align: center;
@@ -210,13 +231,13 @@ header {
     padding-left: 18.5%;
     padding-right: 18.5%;
     padding-top: 50px;
-    padding-bottom: 70px;
-    background-color: #E5E5CB;
-    color: #1A120B;
+    padding-bottom: 1px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .projects hr {
-    border: 1px solid #1A120B;
+    border: 1px solid var(--primary-color);
     margin-top: 0px;
     margin-bottom: 0px;
     width: 95%;
@@ -224,15 +245,20 @@ header {
 }
 
 .project {
-    background-color: #D5CEA3;
-    border-radius: 3px;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    background-color: var(--card-background);
     display: flex;
     margin-bottom: 60px;
+    
+    border-radius: 3px;
+    box-shadow: 2px 2px 0px var(--shadow);
+    border: 2px solid var(--primary-color);
+}
+
+.dark-theme .project {
+    border: none;
 }
 
 .project:hover {
-    transform: scale(1.005);
     transition: 0.2s;
 }
 
@@ -249,7 +275,6 @@ header {
     width: 39.3%;
     object-fit: cover;
     border-radius: 0px 3px 3px 0px;
-    scale : 1.04;
     opacity: 0.9;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
@@ -257,17 +282,23 @@ header {
 .work-experience {
     padding-left: 18.5%;
     padding-right: 18.5%;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 70px;
-    background-color: #1A120B;
-    color: #E5E5CB;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .work-experience-section {
-    background-color: #3C2A21;
-    box-shadow : 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
+    background-color: var(--card-background);
     display: flex;
+
+    border-radius: 3px;
+    box-shadow: 2px 2px 0px var(--shadow);
+    border: 2px solid var(--primary-color);
+}
+
+.dark-theme .work-experience-section {
+    border: none;
 }
 
 .work-experience-section:hover {
@@ -312,7 +343,6 @@ p {
 }
 
 hr {
-    border: 1px solid #E5E5CB;
     margin-top: 0px;
     margin-bottom: 0px;
     width: 100%;
@@ -354,7 +384,7 @@ footer p{
 }
 
 footer a{
-    color: #E5E5CB;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -368,7 +398,7 @@ footer a{
 }
 
 .project-link-wrapper {
-    background-color: #3C2A21;
+    background-color: var(--primary-color);
     width: 100px;
     height: 22px;
     padding: 5px 5px;  
@@ -390,13 +420,13 @@ footer a{
 }
 
 .projectlink:link {
-    color: #E5E5CB;
+    color: var(--secondary-color);
     text-decoration: none;
     flex: 1;
 }
 
 .projectlink:visited {
-    color: #E5E5CB;
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
