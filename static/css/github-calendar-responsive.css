@@ -65,7 +65,7 @@ tool-tip {
 .calendar {
     font-family: 'Merriweather Sans', sans-serif;
     border-radius: 3px;
-    min-height: 243px;
+    min-height: 175;
     text-align: center;
     margin: 0 auto;
 }
