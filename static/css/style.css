@@ -430,7 +430,44 @@ footer a{
     text-decoration: none;
 }
 
-/* ##################################################### */
+
+/* ####################### Album ####################### */
+
+.album-content {
+    text-align: center;
+    padding-left: 18.5%;
+    padding-right: 18.5%;
+    padding-bottom: 1px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.album-header {
+    padding-left: 18.5%;
+    padding-right: 18.5%;
+}
+
+.album {
+    padding-top: 50px;
+}
+
+.album-image {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow:
+    0 0 0 1px var(--primary-color), /* outermost border */
+    0 0 0 6px var(--secondary-color),
+    0 0 0 7px var(--primary-color),
+    0 0 0 13px var(--secondary-color); 
+}
+
+.album-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* ####################### Sizing ###################### */
 
 @media all and (max-width: 1580px) {
     .header-text h1 {
